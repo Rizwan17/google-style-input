@@ -1,0 +1,50 @@
+.g-input-container{
+    width: 250px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    position: relative;
+    margin: 10px 0;
+  }
+  .g-input-container input{
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding-left: 5px;
+    background: transparent;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
+  .g-input-container label{
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    cursor: text;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    transition: all 0.1s ease-in;
+    z-index: 1;
+  }
+  .g-input-container.active{
+    border: 1.5px solid blue;
+  }
+  .g-input-container.active input{
+    padding-left: 10px;
+  }
+  .g-input-container.active label{
+    top: 0;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 5px;
+    color: blue;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
