@@ -11,11 +11,11 @@ for(var i=0; i<gInputContainer.length; i++){
 
 function addGEffect(gInput){
 	for(var i=0; i<gInputContainer.length; i++){
-  	if(gInputContainer[i].getElementsByTagName("input")[0].value == ""){
-    	gInputContainer[i].classList.remove('active');
-    }else{
-    	gInputContainer[i].classList.add('active');
+        if(gInputContainer[i].getElementsByTagName("input")[0].value == ""){
+            gInputContainer[i].classList.remove('active');
+        }else{
+            gInputContainer[i].classList.add('active');
+        }
     }
-  }
   gInput.classList.add('active');
 }
